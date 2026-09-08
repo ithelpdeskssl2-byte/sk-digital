@@ -1,0 +1,92 @@
+{
+  "brand": {
+    "logo": null
+  },
+  "hero": {
+    "title": "We bring disabled pages <span class='accent'>back to life.</span>",
+    "sub": "SK Digital recovers banned and restricted pages, sets up monetization, and grows reach for creators and businesses across Facebook, Instagram and YouTube.",
+    "statPages": "640+",
+    "statClients": "310+",
+    "statYears": "4 yrs"
+  },
+  "about": {
+    "title": "A dedicated team for the pages algorithms forgot.",
+    "lead": "We work directly with creators, shops and agencies whose pages have been disabled, demonetized or restricted \u2014 and get them running again.",
+    "panelText": "Most page owners lose access without warning and don't know which appeal path applies to their case."
+  },
+  "services": [
+    {
+      "icon": "heart",
+      "title": "Page Recovery",
+      "desc": "Restore disabled, banned or hacked Facebook and Instagram pages.",
+      "tag": "Most requested"
+    },
+    {
+      "icon": "coin",
+      "title": "Monetization Setup",
+      "desc": "Get ads, stars and bonus programs enabled.",
+      "tag": "Creators"
+    },
+    {
+      "icon": "trend",
+      "title": "Page Boost",
+      "desc": "Grow reach, followers and engagement with organic strategy.",
+      "tag": "Growth"
+    },
+    {
+      "icon": "shield",
+      "title": "Blue Badge Support",
+      "desc": "Prepare and submit verification applications.",
+      "tag": "Verification"
+    },
+    {
+      "icon": "lock",
+      "title": "Account Security",
+      "desc": "Set up two-factor authentication and recovery contacts.",
+      "tag": "Prevention"
+    }
+  ],
+  "portfolio": [
+    {
+      "stat": "212%",
+      "title": "Reach recovered in 30 days",
+      "desc": "Restricted Facebook page back to full distribution.",
+      "image": null,
+      "link": ""
+    },
+    {
+      "stat": "48 hrs",
+      "title": "Average recovery time",
+      "desc": "For pages disabled due to a policy misclassification.",
+      "image": null,
+      "link": ""
+    },
+    {
+      "stat": "120+",
+      "title": "Pages monetization-enabled",
+      "desc": "Across Facebook and YouTube in last 12 months.",
+      "image": null,
+      "link": ""
+    }
+  ],
+  "blog": [
+    {
+      "date": "2026-08-14",
+      "title": "Why Facebook pages get disabled without warning",
+      "excerpt": "The most common triggers we see."
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Monetization review taking too long? Here's what to check",
+      "excerpt": "A checklist we run through before submitting a monetization appeal."
+    }
+  ],
+  "reviews": [],
+  "links": [],
+  "contact": {
+    "waNumber": "8801700000000",
+    "email": "support@skdigital.com",
+    "address": "Dhaka, Bangladesh",
+    "facebookUrl": ""
+  }
+}

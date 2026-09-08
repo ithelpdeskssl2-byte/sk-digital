@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SK Digital — Social Media Recovery & Growth</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1220;--bg-alt:#0F1830;--panel:#121C36;--text:#F2F0EA;--text-dim:#93A0BD;--line:rgba(255,255,255,0.09);--blue:#3E7CFF;--amber:#FFB648;--radius-lg:14px;--radius-sm:6px}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:Inter,sans-serif;line-height:1.6}
+h1,h2,h3,.brand,.btn{font-family:'Space Grotesk',sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;max-width:1120px;margin:0 auto}
+.brand{font-weight:700;font-size:1.25rem;display:flex;align-items:center;gap:8px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(255,182,72,.18)}
+.btn{padding:11px 20px;border-radius:6px;font-weight:600;border:none;cursor:pointer;text-decoration:none;display:inline-flex;gap:8px}
+.btn-primary{background:var(--blue);color:#fff}.btn-ghost{border:1px solid var(--line);background:transparent;color:var(--text)}
+section{padding:80px 0}.eyebrow{color:var(--amber);font-size:.85rem;font-weight:600;margin-bottom:12px;text-transform:uppercase}
+h2.section-title{font-size:2.1rem;font-weight:700;margin-bottom:18px} p.section-lead{color:var(--text-dim);max-width:520px}
+.hero{padding:90px 0 60px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero h1{font-size:3.3rem;line-height:1.08;margin-bottom:20px}.hero h1 .accent{color:var(--blue)}
+.hero p{color:var(--text-dim);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-stats{display:flex;gap:30px;margin-top:30px}.hero-stats strong{display:block;font-size:1.5rem}.hero-stats span{color:var(--text-dim);font-size:.85rem}
+.pulse-box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
+.service-row{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--line)}
+.service-icon{width:44px;height:44px;border-radius:10px;background:rgba(62,124,255,.12);display:flex;align-items:center;justify-content:center;color:var(--blue);font-weight:700}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}.card p{color:var(--text-dim);font-size:.94rem}
+.contact-box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+footer{padding:30px 0;border-top:1px solid var(--line);text-align:center;color:var(--text-dim);font-size:.9rem}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.contact-box{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="navbar"><div class="brand" id="brandLogoNav"><span class="dot"></span> SK Digital</div><a class="btn btn-primary" href="#contact">Get in Touch</a></div></header>
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow" id="heroEyebrow">Social Media Recovery Expert</div>
+<h1 id="heroTitle">Loading...</h1><p id="heroSub"></p>
+<div style="display:flex;gap:12px"><a href="#contact" class="btn btn-primary">Start Recovery →</a><a href="#services" class="btn btn-ghost">Services</a></div>
+<div class="hero-stats"><div><strong id="statPages">-</strong><span>Pages Recovered</span></div><div><strong id="statClients">-</strong><span>Success Rate</span></div><div><strong id="statYears">-</strong><span>Experience</span></div></div></div>
+<div class="pulse-box"><div style="display:flex;justify-content:space-between;color:var(--text-dim);font-size:.85rem;margin-bottom:16px"><span>Live Recovery Status</span><span style="color:var(--amber)">● Active</span></div><div style="background:var(--bg-alt);border-radius:10px;padding:20px"><div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:12px"><span>Today's Recovery</span><span id="todayCount">12 Accounts</span></div><div style="height:6px;background:rgba(255,255,255,.1);border-radius:10px"><div style="width:85%;height:100%;background:var(--blue);border-radius:10px"></div></div></div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="eyebrow">Services</div><h2 class="section-title">Our Core Services</h2><div id="servicesList"></div></div></section>
+<section id="contact" style="background:var(--bg-alt)"><div class="wrap"><div class="eyebrow">Contact</div><h2 class="section-title">Let's Fix Your Account Today</h2><div class="contact-box"><div><h3>Contact</h3><p id="cEmail" style="color:var(--text-dim);margin-top:12px"></p><p id="cPhone" style="color:var(--text-dim)"></p><p id="cAddr" style="color:var(--text-dim)"></p></div><div><h3>GitHub Safe</h3><p style="color:var(--text-dim);font-size:.9rem;margin-top:10px">This page loads data from js/database.json. When you update admin.html, export new database.json and upload to GitHub - index.html will auto update.</p></div></div></div></section>
+<footer>© <span id="year"></span> SK Digital — Auto-synced from database.json</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+async function loadData(){
+  try{
+    const res = await fetch('./js/database.json?v='+Date.now());
+    if(!res.ok) throw new Error('no db');
+    const data = await res.json();
+    render(data);
+  }catch(e){
+    console.error('Failed to load database.json', e);
+    document.getElementById('heroTitle').innerHTML = "We bring disabled pages <span class='accent'>back to life.</span>";
+  }
+}
+function render(content){
+  document.getElementById('heroTitle').innerHTML = content.hero.title;
+  document.getElementById('heroSub').textContent = content.hero.sub;
+  document.getElementById('statPages').textContent = content.hero.statPages;
+  document.getElementById('statClients').textContent = content.hero.statClients;
+  document.getElementById('statYears').textContent = content.hero.statYears;
+  document.getElementById('servicesList').innerHTML = content.services.map(s=>`
+    <div class="service-row"><div class="service-icon">${(s.title||'').charAt(0)}</div><div><h3>${s.title}</h3><p style="color:var(--text-dim)">${s.desc}</p></div></div>
+  `).join('');
+  document.getElementById('cEmail').textContent = '📧 ' + content.contact.email;
+  document.getElementById('cPhone').textContent = '💬 +' + content.contact.waNumber;
+  document.getElementById('cAddr').textContent = '📍 ' + content.contact.address;
+  if(content.brand && content.brand.logo){
+    document.getElementById('brandLogoNav').innerHTML = `<img src="${content.brand.logo}" style="width:30px;height:30px;border-radius:8px;object-fit:cover"> SK Digital`;
+  }
+}
+loadData();
+</script>
+</body>
+</html>
